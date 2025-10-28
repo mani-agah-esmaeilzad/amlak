@@ -23,8 +23,9 @@ export default function ToursPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">تور نمونه را امتحان کنید</h2>
             <p className="text-base leading-7 text-slate-300">
-              این پیش‌نمایش با استفاده از موتور WebGL کتابخانه Three.js اجرا می‌شود تا دقیقاً همان تجربه‌ای که در محصول نهایی
-              ارائه می‌دهیم را نشان دهد. روی نقاط راهنما مکث کنید و با حرکت ماوس یا لمس، فضای داخلی را کاوش کنید.
+              این پیش‌نمایش با موتور WebGL اختصاصی ما اجرا می‌شود تا دقیقاً همان تجربه‌ای که در محصول نهایی ارائه می‌دهیم را
+              نشان دهد. روی نقاط راهنما مکث کنید و با حرکت ماوس یا لمس، فضای داخلی را کاوش کنید؛ حتی اگر اتصال اینترنت ضعیف
+              باشد، تور با بافت جایگزین واکنش‌گرا در دسترس است.
             </p>
             <ul className="space-y-3 text-sm leading-6 text-slate-300">
               <li>• بارگذاری تصاویر ۳۶۰ با کشیدن و رها کردن</li>
@@ -38,11 +39,7 @@ export default function ToursPage() {
               ساخت تور نامحدود
             </Link>
           </div>
-          <TourViewer
-            image="https://cdn.jsdelivr.net/gh/pannellum/pannellum@2.5.6/images/alma.jpg"
-            title="تور نمونه واحد مبله"
-            hotspots={demoHotspots}
-          />
+          <TourViewer title="تور نمونه واحد مبله" hotspots={demoHotspots} />
         </div>
       </section>
 
