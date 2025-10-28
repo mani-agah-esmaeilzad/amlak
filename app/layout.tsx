@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Vazirmatn } from "next/font/google";
+import { Vazirmatn } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const vazirmatn = Vazirmatn({
   variable: "--font-vazirmatn",
@@ -35,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} min-h-screen bg-slate-950 text-slate-100 antialiased`}
+        className={`${vazirmatn.variable} min-h-screen bg-slate-950 text-slate-100 antialiased`}
       >
         {children}
       </body>
