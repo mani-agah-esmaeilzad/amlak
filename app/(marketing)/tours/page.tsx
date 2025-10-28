@@ -23,8 +23,8 @@ export default function ToursPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">تور نمونه را امتحان کنید</h2>
             <p className="text-base leading-7 text-slate-300">
-              این پیش‌نمایش با استفاده از کتابخانه Pannellum بارگذاری می‌شود و روی تمام دستگاه‌ها عملکرد روانی دارد.
-              نقاط داغ را لمس کنید تا توضیحات فضایی هر قسمت را ببینید.
+              این پیش‌نمایش با استفاده از موتور WebGL کتابخانه Three.js اجرا می‌شود تا دقیقاً همان تجربه‌ای که در محصول نهایی
+              ارائه می‌دهیم را نشان دهد. روی نقاط راهنما مکث کنید و با حرکت ماوس یا لمس، فضای داخلی را کاوش کنید.
             </p>
             <ul className="space-y-3 text-sm leading-6 text-slate-300">
               <li>• بارگذاری تصاویر ۳۶۰ با کشیدن و رها کردن</li>
@@ -41,7 +41,7 @@ export default function ToursPage() {
           <TourViewer
             image="https://cdn.jsdelivr.net/gh/pannellum/pannellum@2.5.6/images/alma.jpg"
             title="تور نمونه واحد مبله"
-            hotspots={demoHotspots.map((spot) => ({ ...spot, type: "info" }))}
+            hotspots={demoHotspots}
           />
         </div>
       </section>
